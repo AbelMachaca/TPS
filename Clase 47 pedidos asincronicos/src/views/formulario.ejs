@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificar película</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <h1 class="main">Editar o Crear película</h1>
+    <form class="card formulario" id="movieForm">
+        <input type="hidden" name="id" id="movieId">
+        <div>        
+            <label for="title">Título </label>
+            <p><input type="text" name="title" id="title" required></p>
+        </div>
+        <div>
+            <label for="rating">Calificación </label>
+            <p><input type="number" name="rating" id="rating" required></p>
+        </div>
+        <div>
+            <label for="awards">Premios </label>
+            <p><input type="number" name="awards" id="awards" required></p>
+        </div>
+        <div>
+            <label for="release_date">Fecha de creación </label>
+            <p><input type="date" name="release_date" id="release_date" required></p>
+        </div>
+        <div>
+            <label for="length">Duración </label>
+            <p><input type="number" name="length" id="length" required></p>
+        </div>
+        
+        <br>
+        <div class="button-container">
+            <button type="submit" class="edit-button">Guardar edición</button>
+            <button type="submit" id="add-button">Guardar nueva película</button>
+            <button id="deleteButton" class="delete-button">Eliminar película</button>
+        </div>           
+    </form>
+    <div class="atras">
+    <a href="/">Volver a inicio</a>
+    </div>
+
+    <script src="/js/formulario.js"></script>
+</body>
+</html>

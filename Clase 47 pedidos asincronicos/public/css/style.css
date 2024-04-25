@@ -1,0 +1,228 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Open Sans', sans-serif;
+  color: black;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Dosis', sans-serif;
+  line-height: 1.6;
+  color: #666;
+  background: #d9f1ff70;
+}
+
+#root {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  padding: 1.5rem 2.5rem;
+  background-image: linear-gradient(120deg, #1100ff96 0%, #4c58bd 100%);
+  margin: 0 0 2rem 0;
+  font-size: 1.5rem;
+  color: white;
+}
+
+img {
+  display: block;
+  margin: 1rem auto;
+  max-width: 100%;
+}
+
+p {
+  padding: 0 2.5rem 2.5rem;
+  margin: 0;
+}
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  position: relative;
+  margin: 2rem;
+  background: white;
+  background-image: linear-gradient(120deg, rgba(182, 220, 255, 0.5) 0%, rgba(255, 228, 225, 0.5) 100%);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all .2s linear;
+}
+
+.card:hover {
+  box-shadow: 2px 8px 45px rgba(0, 0, 0, .15);
+  transform: translate3D(0, -2px, 0);
+}
+
+/* Estilos para el ícono de corazón */
+.heart-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.action {
+  text-align: center;
+}
+
+.botonAgregar, .botonModificar {
+  color: white;
+  background-image: linear-gradient(120deg, #1100ff96 0%, #4c58bd 100%);
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 10px;
+  border: 0;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.botonBorrar {
+  color: white;
+  background-image: linear-gradient(120deg, #f8b1dc96 0%, #c08cb0 100%);
+  padding: 10px;
+  border-radius: 10px;
+  border: 0;
+  margin: 5px;
+}
+
+.formulario {
+  margin: auto;
+  width: 40%;
+  border-radius: 10px;
+}
+
+.formulario label {
+  padding: 1.5rem 2.5rem;
+  margin: 0 0 2rem 0;
+  font-size: 1.5rem;
+}
+
+input,
+select {
+  width: 60%;
+  height: 25px;
+}
+
+@media screen and (min-width: 600px) {
+  .card {
+    flex: 1 1 calc(50% - 2rem);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .card {
+    flex: 1 1 calc(33% - 2rem);
+  }
+}
+
+.card:nth-child(2n) h1 {
+  background-image: linear-gradient(120deg, #1100ff96 0%, #4c58bd 100%);
+}
+
+.card:nth-child(4n) h1 {
+  background-image: linear-gradient(120deg, #1100ff96 0%, #4c58bd 100%);
+}
+
+.card:nth-child(5n) h1 {
+  background-image: linear-gradient(120deg, #1100ff96 0%, #4c58bd 100%);
+}
+
+/* Estilospara los botones */
+.btn-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.btn:hover {
+  background-color: #3cff00;
+}
+
+.agregar-btn {
+  background-color: #006905;
+  color: #fff;
+}
+
+.favoritas-btn {
+  background-color: #006905;
+  color: #fff;
+}
+
+.btn:hover {
+  background-color: #73ff00;
+}
+
+.fa-star {
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/*Botones*/
+.button-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.edit-button{
+  background-color: #1e0eb1;
+  color: #FFFFFF;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+#add-button{
+  background-color: #77a7cb;
+  color: #FFFFFF;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.delete-button {
+  background-color: #fd0429;
+  color: #FFFFFF;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+
+.atras{
+  background-color: #be4444;
+  width: 10%;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+.atras a{
+  color: #FFFFFF;
+  font-size: 15px;
+}
