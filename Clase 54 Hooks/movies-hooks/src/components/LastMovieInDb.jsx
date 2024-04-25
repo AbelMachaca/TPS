@@ -1,4 +1,4 @@
-import React from 'react';
+
 import imagenFondo from '../assets/images/mandalorian.jpg';
 
 function LastMovieInDb(){

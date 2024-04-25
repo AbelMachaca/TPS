@@ -4,7 +4,7 @@ function SearchMovies() {
 const [movies, setMovies] = useState([]);
 const [keyword, setKeyword] = useState("abc");
 
-const apiKey = "cd948047";
+const apiKey = "51e350e9";
 
 const inputKeyword = useRef();
 
